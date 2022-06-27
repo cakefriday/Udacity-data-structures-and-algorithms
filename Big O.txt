@@ -1,0 +1,39 @@
+### Big-O Notation
+
+
+### Task 0
+
+Time complexity for each line is O(1).
+Time complexity : O(1)	
+
+
+### Task 1
+
+
+Time complexity for iteration is O(n)	
+Time complexity for checking bool is O(1)
+Time complexity : O(n)	
+
+
+
+### Task 2
+
+Time complexity for iteration is O(n)	
+Time complexity for checking bool is O(1)
+Time complexity : O(n)	
+
+
+### Task 3
+
+Time complexity for iteration is O(n)	
+Time complexity for checking bool is O(1)
+Time complexity for sorting is O(n log n)
+Time complexity : O(n log n)
+
+
+### Task 4
+
+Time complexity for iteration is O(n)	
+Time complexity for checking bool is O(1)
+Time complexity for sorting is O(n log n)
+Time complexity : O(n log n)
