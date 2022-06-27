@@ -28,7 +28,7 @@ The list of numbers should be print out one per line in lexicographic order with
 
 outgoing = []
 incoming_plus = []
-telemarketers = []
+telemarketers = {}
 for numbers in calls:
     outgoing.append(numbers[0])
     incoming_plus.append(numbers[1])
@@ -37,9 +37,9 @@ for text in texts:
     incoming_plus.append(text[1])
 for number in outgoing:
     if number not in incoming_plus:
-        telemarketers.append(number)
-telemarketers.sort()
+        telemarketers[number] = ""
 print("These numbers could be telemarketers: ")
-for tele in telemarketers:
+for tele in sorted(telemarketers.keys()):
     print(tele)
+
 

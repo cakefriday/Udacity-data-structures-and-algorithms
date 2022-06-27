@@ -65,6 +65,7 @@ for prefix in prefix_list:
   if prefix[0:5] == "(080)":
     count += 1
 
-percent = (count / len(prefix_list))*100
+percent = round((count / len(prefix_list))*100, 2)
+
 print("{} percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.".format(percent))
 

@@ -21,12 +21,13 @@ Print a message:
 
 def find_different(list):
     different_numbers = []
-    for numbers in list:
+    for numbers in list:    
         if numbers[0] not in different_numbers:
             different_numbers.append(numbers[0])
         if numbers[1] not in different_numbers:
             different_numbers.append(numbers[1])
     return different_numbers
-
-all_different = len(find_different(calls)) + len(find_different(texts))
-print("There are {} different telephone numbers in the records.".format(all_different))
+all_different = find_different(calls) + find_different(texts)
+all_different = list(set(all_different))
+all_different_len = len(all_different)
+print("There are {} different telephone numbers in the records.".format(all_different_len))

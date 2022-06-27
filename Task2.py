@@ -22,23 +22,9 @@ September 2016.".
 
 
 length =  {}
-for numbers in calls:
-    first = numbers[0]
-    second = numbers[1]
-    sec = int(numbers[-1])
-  
-    if first not in length:
-        length[first] = sec
-    else:
-        sec1 = length.get(first)
-        sum = sec1 + sec
-        length.update([(first, sum)])
-    if second not in length:
-        length[second] = sec
-    else:
-        sec1 = length.get(second)
-        sum = sec1 + sec
-        length.update([(second, sum)])
+for call in calls:
+    length[call[0]] = length.get(call[0], 0) + int(call[3])
+    length[call[1]] = length.get(call[1], 0) + int(call[3])
 longest_number = max(length, key=length.get)  
 longest_sec = length[longest_number]
   
